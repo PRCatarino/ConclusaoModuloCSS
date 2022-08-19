@@ -1,14 +1,8 @@
-*{
-   margin:0;
-   padding:0;
-   list-style: none;
-   font-size:1.1rem;
-   font-family:Arial, Helvetica, sans-serif;
-}
 body{
-   background-color: #F9F9F9;
+   background-color: #f8f8f8;
 }
 header{
+   background-color: #FFF;
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
@@ -19,8 +13,12 @@ header{
 }
 .container{
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: repeat(12, 1fr);
    margin:10px;
+}
+.logo{
+   text-decoration: none;
+   color:var(--cor-text-dark);
 }
 .search_header{
    display: flex;
@@ -55,13 +53,17 @@ header{
    background-color: darkgray;
    border-radius:7px;
 }
+
 .info_profile{
+   grid-column-start: 2;
    background: url(/assets/imgs/background-profile.jpg) no-repeat; 
-   background-size: 100% 150px;
+   background-size: 100% 120px;
    border-radius: 4px;
-   width: 397px;
+   width: 330px;
    height: 775px;
    text-align: center;
+   padding: 7px;
+   border: 1.5px solid var(--cor-border);
 }
 .profile{
    background: url(/assets/imgs/profileImg.webp) no-repeat;
@@ -69,14 +71,103 @@ header{
    display: block;
    margin:80px auto;
    margin-bottom:20px;
-   border:white solid 3px;
+   border:var(--cor-border) solid 3px;
    border-radius:4px;
    width: 105px;
    height:105px;
 }
 .name_profile{
+   font-family: 'Poppins', sans-serif;
    font-weight: bold;
 }
+.cartegory{
+   margin-top:5px;
+   font-size:0.7em;
+   margin-bottom:10px;
+   font-family: 'Roboto', sans-serif;
+   color:var(--cor-text-dark);
+}
 .description_profile{
-   font-size:0.5em;
+   padding: 7px 40px 7px 40px;
+   font-size:0.7em;
+   font-family: 'Roboto', sans-serif;
+   color: var(--cor-text-clear);
+   margin-bottom:40px;
+}
+.reached_population{
+   display: flex;
+   font-family: 'Poppins', sans-serif;
+   gap:150px;
+   justify-content: center;
+   border-bottom:1px solid var(--cor-border);
+   padding:0px 0px 50px;
+   margin-bottom: 20px;
+}
+.follow, .posts{
+   color: var(--cor-text-dark);
+}
+.follow > p, .posts > p{
+   font-size:0.8em;
+   color: var(--cor-text-clear);
+}
+.nav_profile{
+   text-align: start;
+
+}
+.svg_info_profile{
+   width: 30px;
+   height: 45px;
+ 
+}
+.select_content > p{
+   font-size: 0.8em;
+   font-weight: bold;
+}
+.select_content{
+   gap: 16px;
+   height: 48px;
+   display: flex;
+   padding: 0px 24px;
+   border-radius: 4px;
+   align-items: center;
+   margin: 5px;
+}
+.select_content:hover{
+   cursor: pointer;
+}
+.item_active{
+   background-color: var(--cor-border);
+}
+.section_feed{
+   grid-column-start: 4;
+}
+.array_cards_story{
+   display: flex;
+   max-width: 800px;
+   overflow-x: auto;
+}
+.cards_story{
+   width: 170px;
+   height: 250px;
+   border:1px solid var(--cor-border);
+   border-radius:4px;
+}
+.new_story{
+   background-color: #FFF;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;  
+}
+.new_story > p{
+   font-size: 0.8em;
+}
+
+.svg_story{
+   width: 50px;
+   filter: invert(49%) sepia(99%) saturate(70%) brightness(104%) contrast(100%);
+}
+.svg_story:hover{
+   cursor: pointer;
 }

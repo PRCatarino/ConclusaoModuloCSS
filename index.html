@@ -5,12 +5,16 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="/css/index.css">
+   <link rel="stylesheet" href="/css/var.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
    <title>conclusaoCSS</title>
    <script src="/index.js" defer></script>
 </head>
 <body>
    <header>
-      <div class="logo">music</div>
+      <div><a href="/" class="logo">music</a></div>
       <div class="search_header">
          <input type="text" placeholder="Buscar...">
          <button class="ico_search_header">
@@ -30,8 +34,33 @@
       <div class="container">
          <section class="info_profile">
             <div class="profile"></div>
-            <div class="name_profile">Paulo Catarino</div>
-            <div class="description_profile">Programador da MACH1</div>
+            <div class="name_profile">Bastille </div>
+            <div class="cartegory">Banda Alternativa/indie </div>
+            <div class="description_profile">22ª posição entre os maiores cantores de todos os tempos, pela revista Rolling Sttone, sendo a 3ª mulher mais bem colocada</div>
+            <div class="reached_population">
+               <div class="follow"><h1>324M</h1><p>Seguidores</p></div>
+               <div class="posts"><h1>325K</h1><p>Posts</p></div>
+            </div>
+            <nav class="nav_profile">
+               <ul>
+                  <li><div class="feed_nav select_content item_active"><img src="/assets/svg/broad_activity_feed_regular_icon_205562.svg" alt="" class="svg_info_profile"><p>Feed</p></div></li>
+                  <li><div class="nav_connection select_content"><img src="/assets/svg/connection.svg" alt="" class="svg_info_profile"><p>Conecções</p></div></li>
+                  <li><div class="news select_content"><img src="/assets/svg/newspaper.svg" alt="" class="svg_info_profile"><p>Últimas notícias</p></div></li>
+                  <li><div class="nav_events select_content"><img src="/assets/svg/schedule.svg" alt="" class="svg_info_profile"><p>Eventos</p></div></li>
+                  <li><div class="nav_settings select_content"><img src="/assets/svg/settings.svg" alt="" class="svg_info_profile"><p>Configurações</p></div></li>
+               </ul>
+            </nav>
+         </section>
+         <section class="section_feed">
+            <div class="array_cards_story">
+               <div class="cards_story new_story"><img src="/assets/svg/adiciona.svg" class="svg_story" alt=""><p>Novo Story</p></div>
+               <div class="cards_story"></div>
+               <div class="cards_story"></div>
+               <div class="cards_story"></div>
+               <div class="cards_story"></div>
+               <div class="cards_story"></div>
+               <div class="cards_story"></div>
+            </div>
          </section>
       </div>
    </main>
