@@ -143,14 +143,16 @@ header{
 }
 .array_cards_story{
    display: flex;
-   max-width: 800px;
-   overflow-x: auto;
+   max-width: 700px;
+   height: 600px;
+   overflow: auto;
 }
 .cards_story{
-   width: 170px;
-   height: 250px;
+   width: 600px;
+   height: 200px;
    border:1px solid var(--cor-border);
    border-radius:4px;
+   
 }
 .new_story{
    background-color: #FFF;
@@ -165,9 +167,24 @@ header{
 }
 
 .svg_story{
-   width: 50px;
    filter: invert(49%) sepia(99%) saturate(70%) brightness(104%) contrast(100%);
 }
 .svg_story:hover{
    cursor: pointer;
+}
+.card_1{
+   background: url(/assets/imgs/nba.jpg) no-repeat;
+   background-size: 100% 100%;
+}
+.card_2{
+   background: url(/assets/imgs/snoopdog.jpg) no-repeat;
+   background-size: 100% 100%;
+}
+.card_3{
+   background: url(/assets/imgs/singer.jpg) no-repeat;
+   background-size: 100% 100%;
+}
+.card_4{
+   background: url(/assets/imgs/baskeball.jpg) no-repeat;
+   background-size: 100% 100%;
 }
