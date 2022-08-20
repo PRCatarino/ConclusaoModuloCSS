@@ -7,6 +7,34 @@
 }
 :root{
    --cor-text-dark: #2E2E2E;
-   --cor-text-clear:#949494;
+   --cor-box-text:#949494;
+   --cor-text:#949494;
+   --cor-box-ico:#E0E0E0;
    --cor-border:#E0E0E0;
+   --cor-text-anside:#2E2E2E;
+   --font-poppins:'Poppins', sans-serif;
+   --font-roboto:'Roboto', sans-serif;
+    
+}
+
+.profile_ico{
+   width: 55px;
+   height: 45px;
+   border-radius: 4px;
+   
+}
+.cards_story{
+   border-radius: 4px;
+   height: 225px;
+   width: 160px;
+}
+
+.border_boxs{
+   border-radius: 4px;
+   border: solid 1px var(--cor-border);
+}
+
+.feed_pub{
+   padding:10px;
+   margin-bottom:15px;
 }
