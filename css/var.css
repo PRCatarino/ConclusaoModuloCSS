@@ -4,7 +4,9 @@
    list-style: none;
    font-size:1.1rem;
    font-family: 'Roboto', sans-serif;
+   
 }
+
 :root{
    --cor-text-dark: #2E2E2E;
    --cor-box-text:#949494;
@@ -15,11 +17,10 @@
    --cor-text-on-high-h1:#313131;
    --font-poppins:'Poppins', sans-serif;
    --font-roboto:'Roboto', sans-serif;
-    
 }
 
 .profile_ico{
-   width: 55px;
+   width: 45px;
    height: 45px;
    border-radius: 4px;
    
