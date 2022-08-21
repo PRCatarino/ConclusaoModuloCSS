@@ -9,11 +9,12 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+   <link rel="stylesheet" href="/css/font/css/all.css">
    <script src="/index.js" defer></script>
 </head>
 <body>
    <header>
-      <div><a href="/" class="logo">music</a></div>
+      <div class="header_logo"><a href="/" class="logo"><img src="/assets/svg/Vector.svg" alt=""></a></img></div>
       <div class="search_header">
          <input  class="border_boxs" type="text" placeholder="Buscar...">
          <button class="ico_search_header">
@@ -42,17 +43,41 @@
             </div>
             <nav class="nav_profile">
                <ul>
-                  <li><div class="feed_nav select_content item_active"><img src="/assets/svg/broad_activity_feed_regular_icon_205562.svg" alt="" class="svg_info_profile"><p>Feed</p></div></li>
-                  <li><div class="nav_connection select_content"><img src="/assets/svg/connection.svg" alt="" class="svg_info_profile"><p>Conecções</p></div></li>
-                  <li><div class="news select_content"><img src="/assets/svg/newspaper.svg" alt="" class="svg_info_profile"><p>Últimas notícias</p></div></li>
-                  <li><div class="nav_events select_content"><img src="/assets/svg/schedule.svg" alt="" class="svg_info_profile"><p>Eventos</p></div></li>
-                  <li><div class="nav_settings select_content"><img src="/assets/svg/settings.svg" alt="" class="svg_info_profile"><p>Configurações</p></div></li>
+                  <li>
+                     <button class="feed_nav select_content item_active">
+                        <i class="fa-solid fa-server"></i>
+                        <p>Feed</p>
+                     </button>
+                  </li>
+                  <li>
+                     <button class="nav_connection select_content item_active">
+                        <i class="fa-solid fa-users"></i>
+                        <p>Conecções</p>
+                     </button>
+                  </li>
+                  <li>
+                     <button class="news select_content item_active">
+                        <i class="fa-solid fa-newspaper"></i>
+                        <p>Últimas notícias</p>
+                     </button>
+                  </li>
+                  <li>
+                     <button class="nav_events select_content item_active">
+                     <i class="fa-solid fa-calendar-day"></i>
+                     <p>Eventos</p>
+                  </li>
+                  <li>
+                     <button class="nav_settings select_content item_active">
+                        <i class="fa-solid fa-gear"></i>
+                        <p>Configurações</p>
+                     </button>
+                  </li>
                </ul>
             </nav>
          </section>
          <section class="section_feed">
             <div class="array_cards_story">
-               <div class="cards_story new_story"><img class="svg_story " src="/assets/svg/adiciona.svg"/> </div>
+               <div class="cards_story new_story"><i class="fa-solid fa-plus"></i>Novo Story</div>
                <div class="cards_story card_1"></div>
                <div class="cards_story card_2"></div>
                <div class="cards_story card_3"></div>
@@ -65,10 +90,10 @@
                <textarea name="" id="" cols="30" rows="10" placeholder="Placeholder do textarea..."  class="make_publication border_boxs"></textarea>
                <div class="include_post_content">
                   <p class="inclusion_post">incluir</p>
-                  <button class="inclusion_post include_photo buttons_default">Foto</button>
-                  <button class="inclusion_post include_video buttons_default">Vídeo</button>
-                  <button class="inclusion_post include_event buttons_default">Evento</button>
-                  <button class="inclusion_post include_post buttons_default">Postar</button>
+                  <button class="inclusion_post include_photo include_post button_actions">Foto</button>
+                  <button class="inclusion_post include_video include_post button_actions">Vídeo</button>
+                  <button class="inclusion_post include_event include_post button_actions">Evento</button>
+                  <button class="inclusion_post include_post include_post button_actions">Postar</button>
                </div>
             </div>
             <div class="feed_pub border_boxs">
@@ -85,8 +110,8 @@
                </div>
                <div class="react_pub">
                   <div>
-                     <button class="button_react buttons_default">Gostei</button>
-                     <button class="button_react buttons_default">Compartilhar</button>
+                     <button class="button_react button_actions">Gostei</button>
+                     <button class="button_react button_actions">Compartilhar</button>
                   </div>
                   <p>30 comentários</p>
                </div>
@@ -97,9 +122,9 @@
             </div>
             <div class="feed_pub border_boxs">
                <div class="author_pub">
-                  <img src="/assets/imgs/post-malone.webp" alt="" class="profile_ico">
+                  <img src="/assets/imgs/lil_wayne.webp" alt="" class="profile_ico">
                   <div>
-                     <h2>Post Malone</h2>
+                     <h2>Lil Wayne</h2>
                      <p class="about_pub">Cantor e compositor</p>
                      <p class="time_pub">- Há 6 horas</p>
                   </div>
@@ -110,8 +135,8 @@
                </div>
                <div class="react_pub">
                   <div>
-                     <button class="button_react buttons_default">Gostei</button>
-                     <button class="button_react buttons_default">Compartilhar</button>
+                     <button class="button_react button_actions">Gostei</button>
+                     <button class="button_react button_actions">Compartilhar</button>
                   </div>
                   <p>30 comentários</p>
                </div>
@@ -121,19 +146,70 @@
                </div>
             </div>
          </section>
-         <anside>
-            <div class="suggestion_anside border_boxs">
-               <h1>Parecidos com você</h1>
-               <div>
-                  <img src="/assets/imgs/Dua-Lipa.webp" class="profile_ico" alt="">
+         <section>
+            <div class="bar_notification">
+               <div class="suggestion_anside border_boxs">
+                  <h1>Parecidos com você</h1>
                   <div>
-                     <h2 class="name_suggestion">Nina Simone</h2>
-                     <p class="profession_suggestion">Cantora e compositora</p>
+                     <img src="/assets/imgs/Dua-Lipa.webp" class="profile_ico" alt="">
+                     <div class="profile_notification">
+                        <h2 class="name_suggestion">Dua Lipa</h2>
+                        <p class="profession_suggestion ">Cantora e compositora</p>
+                     </div>
+                       <i class="fa-solid fa-user-plus"></i>
                   </div>
-                  <img src="" alt="">
+                  <div>
+                     <img src="/assets/imgs/lil_wayne.webp" class="profile_ico" alt="">
+                     <div class="profile_notification">
+                        <h2 class="name_suggestion">Lil_Wayne</h2>
+                        <p class="profession_suggestion ">Cantor de Rap e trap</p>
+                     </div>
+                       <i class="fa-solid fa-user-plus"></i>
+                  </div>
+                  <div>
+                     <img src="/assets/imgs/lil_peep.jpeg" class="profile_ico" alt="">
+                     <div class="profile_notification">
+                        <h2 class="name_suggestion">Lil Peep</h2>
+                        <p class="profession_suggestion ">Cantor de Rap e trap</p>
+                     </div>
+                       <i class="fa-solid fa-user-plus"></i>
+                  </div>
+                  <div>
+                     <img src="/assets/imgs/6ix9nine.webp" class="profile_ico" alt="">
+                     <div class="profile_notification">
+                        <h2 class="name_suggestion">6ix9nine</h2>
+                        <p class="profession_suggestion ">Cantor de Rap e trap</p>
+                     </div>
+                       <i class="fa-solid fa-user-plus"></i>
+                  </div>
+                  <div>
+                     <img src="/assets/imgs/travis_scoot.jpg" class="profile_ico" alt="">
+                     <div class="profile_notification">
+                        <h2 class="name_suggestion">Travis Scoot</h2>
+                        <p class="profession_suggestion ">Cantor de Rap e trap</p>
+                     </div>
+                       <i class="fa-solid fa-user-plus"></i>
+                  </div>
+                  <button class="button_actions">Ver mais...</button>
                </div>
             </div>
-         </anside>
+            <div class="on_hight border_boxs">
+               <h1>Em alta</h1>
+               <div class="on_hight_comment">
+                  <h2>Madonna rasga elogios a Kendrick Lamar e diz que gostaria de colaborar com rapper</h2>
+                  <p class="time_pub">Há 2 horas</p>
+               </div>
+               <div class="on_hight_comment">
+                  <h2>Katy Perry vai às lágrimas durante show em Las Vegas</h2>
+                  <p class="time_pub">Há 3 horas</p>
+               </div>
+               <div class="on_hight_comment">
+                  <h2>Pitty pede condições melhores para artistas nacionais no Rock in</h2>
+                  <p class="time_pub">Há 2 horas</p>
+               </div>
+               
+            </div>
+         </section>
       </div>
    </main>
 </body>

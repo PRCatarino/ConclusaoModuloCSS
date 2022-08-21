@@ -12,6 +12,7 @@
    --cor-box-ico:#E0E0E0;
    --cor-border:#E0E0E0;
    --cor-text-anside:#2E2E2E;
+   --cor-text-on-high-h1:#313131;
    --font-poppins:'Poppins', sans-serif;
    --font-roboto:'Roboto', sans-serif;
     
@@ -32,9 +33,26 @@
 .border_boxs{
    border-radius: 4px;
    border: solid 1px var(--cor-border);
+   padding:15px;
+   margin-bottom: 15px;
 }
 
-.feed_pub{
-   padding:10px;
-   margin-bottom:15px;
+.button_actions{
+   border:none;
+   font-size: 0.8em;
+   padding: 4px 8px;
+   background-color: var(--cor-box-text);
+   transition: background 0.3s;
+   color:white;
+   border-radius:4px;
+   font-size: 0.8em;
+   padding: 4px 8px;
+   margin:2px;
+}
+.button_actions:hover{
+   background-color: #696969;
+   cursor: pointer;
+}
+.button_actions:focus{
+   background-color: var(--cor-text-dark);
 }
