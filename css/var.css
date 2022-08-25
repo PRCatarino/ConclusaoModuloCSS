@@ -2,12 +2,14 @@
    margin:0;
    padding:0;
    list-style: none;
-   font-size:1.1rem;
+   font-size:1.2rem;
    font-family: 'Roboto', sans-serif;
    
 }
 
 :root{
+   
+
    --cor-text-dark: #2E2E2E;
    --cor-box-text:#949494;
    --cor-text:#949494;
@@ -41,13 +43,13 @@
 .button_actions{
    border:none;
    font-size: 0.8em;
-   padding: 4px 8px;
    background-color: var(--cor-box-text);
    transition: background 0.3s;
    color:white;
    border-radius:4px;
    font-size: 0.8em;
-   padding: 4px 8px;
+   height: 30px;
+   padding:0px 10px;
    margin:2px;
 }
 .button_actions:hover{
@@ -56,4 +58,13 @@
 }
 .button_actions:focus{
    background-color: var(--cor-text-dark);
+}
+
+@media screen and(max-width:1210px){
+   *{
+      font-size:1.3rem;
+   }
+   .buttons_actions{
+      
+   }
 }

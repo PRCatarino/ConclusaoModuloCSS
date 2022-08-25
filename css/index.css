@@ -3,11 +3,6 @@ body{
 }
 header{
    background-color: #FFF;
-   display: flex;
-   justify-content: space-around;
-   flex-wrap: wrap;
-   padding: 10px;
-   align-items: center;
    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
    margin-bottom:25px;
 }
@@ -24,7 +19,12 @@ header{
 }
 
 .logo{
+   background-image: url(/assets/svg/Vector.svg);
+   background-repeat: no-repeat;
+   background-size: contain;
    margin-top: 2px;
+   width: 35px;
+   height: 35px;
    text-decoration: none;
    color:var(--cor-text-dark);
 }
@@ -36,6 +36,7 @@ header{
    width: 250px;
    height: 17px;
    padding:14px;
+   margin-bottom:0;
 }
 .ico_search_header{
    width: 50px;
@@ -53,6 +54,9 @@ header{
 .list_header{
    display: flex;
    gap: 10px;
+   justify-content: center;
+   align-content: center;
+   margin-bottom: -5px;
 }
 
 .buttons_svg{
@@ -64,14 +68,14 @@ header{
 
 .info_profile{
    grid-column-start: 1;
-   background: url(assets/imgs/background-profile.jpg) no-repeat; 
+   background: url(/assets/imgs/background-profile.jpg) no-repeat; 
    background-size: 100% 120px;
    text-align: center;
-   height: 800px;
+   height: 830px;
    margin:5px;
 }
 .profile{
-   background: url(assets/imgs/profileImg.webp) no-repeat;
+   background: url(/assets/imgs/profileImg.webp) no-repeat;
    background-size: cover;
    display: block;
    margin:80px auto;
@@ -116,6 +120,14 @@ header{
    font-family: var(--font-roboto);
    font-weight: 600;
    color:var(--cor-box-text);
+}
+.nav_header{
+   display: flex;
+   justify-content: space-around;
+   padding: 10px;  
+   align-items: center;
+   height: 55px;
+   gap:10px;
 }
 .nav_profile{
    text-align: start;
@@ -201,33 +213,34 @@ header{
    cursor: pointer;
 }
 .card_1{
-   background: url(assets/imgs/nba.jpg) no-repeat;
+   background: url(/assets/imgs/nba.jpg) no-repeat;
    background-size: 100% 100%;
 }
 .card_2{
-   background: url(assets/imgs/snoopdog.jpg) no-repeat;
+   background: url(/assets/imgs/snoopdog.jpg) no-repeat;
    background-size: 100% 100%;
 }
 .card_3{
-   background: url(assets/imgs/singer.jpg) no-repeat;
+   background: url(/assets/imgs/singer.jpg) no-repeat;
    background-size: 100% 100%;
 }
 .card_4{
-   background: url(assets/imgs/baskeball.jpg) no-repeat;
+   background: url(/assets/imgs/baskeball.jpg) no-repeat;
    background-size: 100% 100%;
 }
 .feed_post{
    display: grid;
-   grid-template-columns: repeat(2, 1fr);
+   grid-template-columns: 10% auto;
    gap: 10px;
 }
-.feed_post > .make_publication{
+.make_publication{
    resize: none;
    width: 300px;
    font-size:0.8em;
    height: 46px;
-   width: 340px;
+   width:85%;
    padding:15px;
+   margin-left: 10px;
 }
 .feed_post > p{
    grid-column-start: 2;
@@ -373,6 +386,7 @@ header{
 .suggestion_anside > button{
    width: 100%;
    padding:14px;
+   height: 45px;
 }
 .profile_notification{
    grid-column-start: 2;
@@ -386,6 +400,7 @@ header{
 .profession_suggestion{
    font-size:0.7em;
 }
+
 .on_hight > h1{
    font-size:1.4em;
    color: var(--cor-text-on-high-h1);
@@ -404,8 +419,8 @@ header{
 .container{
    display: grid;
    grid-template-columns: 40% calc(60% - 20px);
-   max-width: 800px;
-   gap: 20px;
+   max-width: 750px;
+   gap: 15px;
    margin: 0 auto;
  }
 .section_bar_notification{
@@ -420,11 +435,54 @@ header{
 .new_story{
    height: calc(225px - 4px);
 }
-.feed_post > .make_publication{
-   resize: none;
-   font-size: 0.8em;
-   height: 46px;
-   width: 340px;
-   padding: 15px;
+.profile_ico{
+   width: 55px;
+   height: 55px;
 }
+
+}
+@media (max-width:750px){
+   .container{
+      display: grid;
+      grid-template-columns: 100%;
+      max-width: 90vw;
+      gap: 15px;
+      margin: 0 auto;
+    }
+    .search_header > input{
+      width: 60%;
+      margin-bottom:0;
+    }
+    .info_profile{
+      display: none;
+    }
+    .section_feed{
+      grid-column-start: 1;
+    }
+    *{
+      font-size:1.5rem;
+    }
+    .button_config{
+      display: none;
+    }
+    .profile_ico{
+      width: 65px;
+      height: 65px;
+   }
+   .button_svg_settings{
+      display: none;
+   }
+   .include_post_content{
+      grid-column-start: 1;
+   }
+   .make_publication{
+      width: 85%;
+   }
+   .include_post_content > button{
+      padding: 0px 6px;
+      font-size:0.7em;
+   }
+   .include_post_content > button:last-child{
+      width: 80px;
+   }
 }
