@@ -1,3 +1,6 @@
+html{
+   scroll-behavior: smooth;
+}
 body{
    background-color: #f8f8f8;
 }
@@ -415,6 +418,23 @@ header{
    font-weight: 600;
    color: var(--cor-text-anside);
 }
+
+.return_top{
+   position: fixed;
+   bottom:20px;
+   right: 30px;
+   width: 25px;
+   height: 24px;
+   padding: 10px;
+   border-radius:10px;
+   background-color: #3b3b3b
+}
+.return_top:focus{
+   background-color: #161616;
+}
+.return_top > img{
+   filter: invert(1);
+}
 @media (max-width:1210px) {
 .container{
    display: grid;
@@ -439,7 +459,9 @@ header{
    width: 55px;
    height: 55px;
 }
-
+.return_top{
+   display: none;
+}
 }
 @media (max-width:750px){
    .container{
