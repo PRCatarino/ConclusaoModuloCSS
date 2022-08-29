@@ -187,6 +187,26 @@ header{
    overflow-x: auto;
    margin-bottom:20px;
 }
+.array_cards_story::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.array_cards_story::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.array_cards_story::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: var(--cor-text-dark);
+}
+
 .fa-plus{
    color: var(--cor-text-dark);
    padding: 2px 3px;
@@ -435,6 +455,7 @@ header{
 .return_top > img{
    filter: invert(1);
 }
+
 @media (max-width:1210px) {
 .container{
    display: grid;
@@ -451,7 +472,9 @@ header{
 }
 .array_cards_story{
    width: 100%;
+   
 }
+
 .new_story{
    height: calc(225px - 4px);
 }
